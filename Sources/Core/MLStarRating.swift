@@ -23,9 +23,7 @@
 import UIKit
 
 class MLStarRating: UIView {
-    
     static let name = "MLStarRating"
-    
     private let star1 = StarButton()
     private let star2 = StarButton()
     private let star3 = StarButton()
@@ -38,12 +36,12 @@ class MLStarRating: UIView {
     init() {
         super.init(frame: .zero)
         setupStackView()
-        setupViewConfiguration()
+        //setupViewConfiguration()
     }
     init(with star: Int) {
         super.init(frame: .zero)
         setupStackView()
-        setupViewConfiguration()
+        //setupViewConfiguration()
     }
     private func setupStackView() {
         buttons = [star1, star2, star3, star4, star5]

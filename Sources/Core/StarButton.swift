@@ -25,7 +25,6 @@ import UIKit
 enum StarButtonState: String {
     case checked, unChecked
 }
-
 class StarButton: UIButton {
     var didCheck: (() -> Void)?
     var didUnChack: (() -> Void)?
