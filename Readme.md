@@ -19,7 +19,7 @@ Star Ratings for swift projects
 
 ## Requirements
 
-- iOS 8.0+ / Mac OS X 10.10+ / tvOS 9.0+ / watchOS 2.0+
+- iOS 10.0+  / tvOS 9.0+ 
 - Xcode 9.0+
 
 ## Installation
@@ -38,10 +38,10 @@ To integrate MLStarRating into your Xcode project using CocoaPods, specify it in
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '10.0'
 use_frameworks!
 
-pod 'MLStarRating', '~> 0.0.1'
+pod 'MLStarRating', '~> 0.0.4'
 ```
 
 Then, run the following command:
@@ -67,7 +67,7 @@ $ brew install carthage
 To integrate MLStarRating into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "micheltlutz/MLStarRating" ~> 0.0.1
+github "micheltlutz/MLStarRating" ~> 0.0.4
 ```
 
 </details>
@@ -85,7 +85,7 @@ import PackageDescription
 let package = Package(
 name: "HelloMLStarRating",
 dependencies: [
-.package(url: "https://github.com/micheltlutz/MLStarRating.git", .upToNextMajor(from: "0.0.1"))
+.package(url: "https://github.com/micheltlutz/MLStarRating.git", .upToNextMajor(from: "0.0.4"))
 ],
 targets: [
 .target(name: "HelloMLStarRating", dependencies: ["MLStarRating"])

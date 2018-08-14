@@ -22,37 +22,51 @@
 
 import UIKit
 
-enum StarButtonState: String {
+public enum MLStarButtonState: String {
     case checked, unChecked
 }
-class StarButton: UIButton {
-    var didCheck: (() -> Void)?
-    var didUnChack: (() -> Void)?
-    var emptyStarImageName = "emptyStar"
-    var fullStarImageName = "fullStar"
-    private let sizeIcon = CGFloat(36)
-    var viewState: StarButtonState = .unChecked {
+public class MLStarButton: UIButton {
+    open var didCheck: (() -> Void)?
+    open var didUnChack: (() -> Void)?
+    open var emptyStarImageName = "emptyStar" {
         didSet {
-            if viewState == .unChecked {
-                setImage(UIImage(named: emptyStarImageName), for: .normal)
-            } else {
-                setImage(UIImage(named: fullStarImageName), for: .normal)
-            }
+            setupImages()
         }
     }
-    init() {
-        super.init(frame: .zero)
+    open var fullStarImageName = "fullStar" {
+        didSet {
+            setupImages()
+        }
+    }
+    private let sizeIcon = CGFloat(36)
+    open var viewState: MLStarButtonState = .unChecked {
+        didSet {
+            setupImages()
+        }
+    }
+    convenience init() {
+        self.init(frame: CGRect.zero)
         addTarget(self, action: #selector(touchUpInsideButton), for: .touchUpInside)
         translatesAutoresizingMaskIntoConstraints = false
         widthAnchor.constraint(equalToConstant: sizeIcon).isActive = true
         heightAnchor.constraint(equalToConstant: sizeIcon).isActive = true
     }
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    internal func setupImages() {
+        if viewState == .unChecked {
+            setImage(UIImage(named: emptyStarImageName), for: .normal)
+        } else {
+            setImage(UIImage(named: fullStarImageName), for: .normal)
+        }
+    }
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
 }
 
-extension StarButton {
+extension MLStarButton {
     @objc fileprivate func touchUpInsideButton() {
         if viewState == .checked {
             didUnChack?()

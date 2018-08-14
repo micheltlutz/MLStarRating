@@ -27,28 +27,28 @@ import UIKit
  */
 open class MLStarRating: UIView {
     static let name = "MLStarRating"
-    public var emptyStarImageName: String?
-    public var fullStarImageName: String?
-    private let star1 = StarButton()
-    private let star2 = StarButton()
-    private let star3 = StarButton()
-    private let star4 = StarButton()
-    private let star5 = StarButton()
-    private var buttons: [StarButton] = []
+    open var emptyStarImageName: String?
+    open var fullStarImageName: String?
+    private let star1 = MLStarButton()
+    private let star2 = MLStarButton()
+    private let star3 = MLStarButton()
+    private let star4 = MLStarButton()
+    private let star5 = MLStarButton()
+    private var buttons: [MLStarButton] = []
     private var stackViewStar: UIStackView!
-    public var didChangeStar: ((_ startCount: Int) -> Void)?
-    public var selectedStar = 0
-    init() {
+    open var didChangeStar: ((_ startCount: Int) -> Void)?
+    open var selectedStar = 0
+    public init() {
         super.init(frame: .zero)
-        setupStackView()
         setupStars()
-        //setupViewConfiguration()
+        setupStackView()
+        setupViewConfiguration()
     }
-    init(with star: Int) {
+    public init(with star: Int) {
         super.init(frame: .zero)
         setupStackView()
         setupStars()
-        //setupViewConfiguration()
+        setupViewConfiguration()
     }
     open func setupStars() {
         if let emptyStarImageName = emptyStarImageName {
@@ -123,19 +123,19 @@ open class MLStarRating: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
-//
-//extension MLStarRating: ViewConfiguration {
-//    func setupConstraints() {
-//        widthAnchor.constraint(equalToConstant: 230).isActive = true
-//        heightAnchor.constraint(equalToConstant: 36).isActive = true
-//        stackViewStar.topAnchor.constraint(equalTo: topAnchor).isActive = true
-//        stackViewStar.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-//        stackViewStar.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-//    }
-//    func buildViewHierarchy() {
-//        addSubview(stackViewStar)
-//    }
-//    func configureViews() {
-//        translatesAutoresizingMaskIntoConstraints = false
-//    }
-//}
+
+extension MLStarRating: ViewConfiguration {
+    func setupConstraints() {
+        widthAnchor.constraint(equalToConstant: 230).isActive = true
+        heightAnchor.constraint(equalToConstant: 36).isActive = true
+        stackViewStar.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        stackViewStar.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        stackViewStar.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+    }
+    func buildViewHierarchy() {
+        addSubview(stackViewStar)
+    }
+    func configureViews() {
+        translatesAutoresizingMaskIntoConstraints = false
+    }
+}
