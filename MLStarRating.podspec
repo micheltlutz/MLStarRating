@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
  s.name = 'MLStarRating'
- s.version = '0.0.2'
+ s.version = '0.0.3'
  s.license = { :type => "MIT", :file => "LICENSE" }
  s.summary = 'Star Ratings for swift projects'
  s.homepage = 'http://micheltlutz.me'
  s.social_media_url = 'https://twitter.com/michel_lutz'
  s.authors = { "Michel Anderson Lutz Teixeira" => "michel_lutz@icloud.com" }
  s.source = { :git => "https://github.com/micheltlutz/MLStarRating.git", :tag => "v"+s.version.to_s }
- s.platforms = { :ios => "10.3", :tvos => "9.0" }
+ s.platforms = { :ios => "10.0", :tvos => "9.0" }
  s.requires_arc = true
 
  s.default_subspec = "Core"

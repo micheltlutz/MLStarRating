@@ -22,8 +22,13 @@
 
 import UIKit
 
-class MLStarRating: UIView {
+/**
+ MLStarRating
+ */
+open class MLStarRating: UIView {
     static let name = "MLStarRating"
+    public var emptyStarImageName: String?
+    public var fullStarImageName: String?
     private let star1 = StarButton()
     private let star2 = StarButton()
     private let star3 = StarButton()
@@ -31,17 +36,36 @@ class MLStarRating: UIView {
     private let star5 = StarButton()
     private var buttons: [StarButton] = []
     private var stackViewStar: UIStackView!
-    var didChangeStar: ((_ startCount: Int) -> Void)?
-    var selectedStar = 0
+    public var didChangeStar: ((_ startCount: Int) -> Void)?
+    public var selectedStar = 0
     init() {
         super.init(frame: .zero)
         setupStackView()
+        setupStars()
         //setupViewConfiguration()
     }
     init(with star: Int) {
         super.init(frame: .zero)
         setupStackView()
+        setupStars()
         //setupViewConfiguration()
+    }
+    open func setupStars() {
+        if let emptyStarImageName = emptyStarImageName {
+            star1.emptyStarImageName = emptyStarImageName
+            star2.emptyStarImageName = emptyStarImageName
+            star3.emptyStarImageName = emptyStarImageName
+            star4.emptyStarImageName = emptyStarImageName
+            star5.emptyStarImageName = emptyStarImageName
+        }
+        
+        if let fullStarImageName = fullStarImageName {
+            star1.fullStarImageName = fullStarImageName
+            star2.fullStarImageName = fullStarImageName
+            star3.fullStarImageName = fullStarImageName
+            star4.fullStarImageName = fullStarImageName
+            star5.fullStarImageName = fullStarImageName
+        }
     }
     private func setupStackView() {
         buttons = [star1, star2, star3, star4, star5]
@@ -95,7 +119,7 @@ class MLStarRating: UIView {
             button.viewState = .unChecked
         }
     }
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
