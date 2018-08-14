@@ -28,13 +28,15 @@ enum StarButtonState: String {
 class StarButton: UIButton {
     var didCheck: (() -> Void)?
     var didUnChack: (() -> Void)?
+    var emptyStarImageName = "emptyStar"
+    var fullStarImageName = "fullStar"
     private let sizeIcon = CGFloat(36)
     var viewState: StarButtonState = .unChecked {
         didSet {
             if viewState == .unChecked {
-                setImage(UIImage(named: "emptyStar"), for: .normal)
+                setImage(UIImage(named: emptyStarImageName), for: .normal)
             } else {
-                setImage(UIImage(named: "fullStar"), for: .normal)
+                setImage(UIImage(named: fullStarImageName), for: .normal)
             }
         }
     }
