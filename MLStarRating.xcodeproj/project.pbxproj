@@ -33,8 +33,8 @@
 		35B742371F82A61E00829B21 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742351F82A61E00829B21 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		35B742381F82A62900829B21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742341F82A61D00829B21 /* Nimble.framework */; };
 		35B742391F82A62900829B21 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742351F82A61E00829B21 /* Quick.framework */; };
-		D0AC041221221403002584B2 /* StarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC041121221403002584B2 /* StarButton.swift */; };
-		D0AC041321221403002584B2 /* StarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC041121221403002584B2 /* StarButton.swift */; };
+		D0AC041221221403002584B2 /* MLStarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC041121221403002584B2 /* MLStarButton.swift */; };
+		D0AC041321221403002584B2 /* MLStarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC041121221403002584B2 /* MLStarButton.swift */; };
 		D0AC041921221529002584B2 /* ClosureAttach.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC041721221528002584B2 /* ClosureAttach.swift */; };
 		D0AC041A21221529002584B2 /* ClosureAttach.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC041721221528002584B2 /* ClosureAttach.swift */; };
 		D0AC041B21221529002584B2 /* UIControl+addAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC041821221529002584B2 /* UIControl+addAction.swift */; };
@@ -127,7 +127,7 @@
 		35B7422E1F82A5E000829B21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		35B742341F82A61D00829B21 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		35B742351F82A61E00829B21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
-		D0AC041121221403002584B2 /* StarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarButton.swift; sourceTree = "<group>"; };
+		D0AC041121221403002584B2 /* MLStarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLStarButton.swift; sourceTree = "<group>"; };
 		D0AC041721221528002584B2 /* ClosureAttach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureAttach.swift; sourceTree = "<group>"; };
 		D0AC041821221529002584B2 /* UIControl+addAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+addAction.swift"; sourceTree = "<group>"; };
 		D0AC041D2122153D002584B2 /* ViewConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
@@ -272,7 +272,7 @@
 		359649011FB18CBF00FC7ADC /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				D0AC041121221403002584B2 /* StarButton.swift */,
+				D0AC041121221403002584B2 /* MLStarButton.swift */,
 				359649021FB18CBF00FC7ADC /* MLStarRating.swift */,
 				D0AC041721221528002584B2 /* ClosureAttach.swift */,
 				D0AC041821221529002584B2 /* UIControl+addAction.swift */,
@@ -579,7 +579,7 @@
 				D0AC041B21221529002584B2 /* UIControl+addAction.swift in Sources */,
 				359649031FB18CC000FC7ADC /* MLStarRating.swift in Sources */,
 				D0AC041E2122153D002584B2 /* ViewConfiguration.swift in Sources */,
-				D0AC041221221403002584B2 /* StarButton.swift in Sources */,
+				D0AC041221221403002584B2 /* MLStarButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,7 +607,7 @@
 				D0AC041C21221529002584B2 /* UIControl+addAction.swift in Sources */,
 				359649051FB18CC000FC7ADC /* MLStarRating.swift in Sources */,
 				D0AC041F2122153D002584B2 /* ViewConfiguration.swift in Sources */,
-				D0AC041321221403002584B2 /* StarButton.swift in Sources */,
+				D0AC041321221403002584B2 /* MLStarButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
  s.name = 'MLStarRating'
- s.version = '0.0.3'
+ s.version = '0.0.4'
  s.license = { :type => "MIT", :file => "LICENSE" }
  s.summary = 'Star Ratings for swift projects'
  s.homepage = 'http://micheltlutz.me'
