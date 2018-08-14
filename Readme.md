@@ -147,6 +147,15 @@ $ git submodule update --init --recursive
 </p></details>
 
 ## Usage
+```swift
+
+import MLStarRating
+
+let mlStarRating = MLStarRating()
+mlStarRating.didChangeStar = { starCount in
+  print("Star selected: \(starCount)")
+}
+```
 
 ## Contributing
 
