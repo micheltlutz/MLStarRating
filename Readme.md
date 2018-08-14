@@ -26,7 +26,7 @@ Star Ratings for swift projects
 
 ### Dependency Managers
 <details>
-  <summary><strong>CocoaPods</strong></summary>
+<summary><strong>CocoaPods</strong></summary>
 
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
 
@@ -53,7 +53,7 @@ $ pod install
 </details>
 
 <details>
-  <summary><strong>Carthage</strong></summary>
+<summary><strong>Carthage</strong></summary>
 
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that automates the process of adding frameworks to your Cocoa application.
 
@@ -73,7 +73,7 @@ github "micheltlutz/MLStarRating" ~> 0.0.1
 </details>
 
 <details>
-  <summary><strong>Swift Package Manager</strong></summary>
+<summary><strong>Swift Package Manager</strong></summary>
 
 To use MLStarRating as a [Swift Package Manager](https://swift.org/package-manager/) package just add the following in your Package.swift file.
 
@@ -83,13 +83,13 @@ To use MLStarRating as a [Swift Package Manager](https://swift.org/package-manag
 import PackageDescription
 
 let package = Package(
-    name: "HelloMLStarRating",
-    dependencies: [
-        .package(url: "https://github.com/micheltlutz/MLStarRating.git", .upToNextMajor(from: "0.0.1"))
-    ],
-    targets: [
-        .target(name: "HelloMLStarRating", dependencies: ["MLStarRating"])
-    ]
+name: "HelloMLStarRating",
+dependencies: [
+.package(url: "https://github.com/micheltlutz/MLStarRating.git", .upToNextMajor(from: "0.0.1"))
+],
+targets: [
+.target(name: "HelloMLStarRating", dependencies: ["MLStarRating"])
+]
 )
 ```
 </details>
@@ -99,7 +99,7 @@ let package = Package(
 If you prefer not to use either of the aforementioned dependency managers, you can integrate MLStarRating into your project manually.
 
 <details>
-  <summary><strong>Git Submodules</strong></summary><p>
+<summary><strong>Git Submodules</strong></summary><p>
 
 - Open up Terminal, `cd` into your top-level project directory, and run the following command "if" your project is not initialized as a git repository:
 
@@ -116,7 +116,7 @@ $ git submodule update --init --recursive
 
 - Open the new `MLStarRating` folder, and drag the `MLStarRating.xcodeproj` into the Project Navigator of your application's Xcode project.
 
-    > It should appear nested underneath your application's blue project icon. Whether it is above or below all the other Xcode groups does not matter.
+> It should appear nested underneath your application's blue project icon. Whether it is above or below all the other Xcode groups does not matter.
 
 - Select the `MLStarRating.xcodeproj` in the Project Navigator and verify the deployment target matches that of your application target.
 - Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the "Targets" heading in the sidebar.
@@ -124,7 +124,7 @@ $ git submodule update --init --recursive
 - Click on the `+` button under the "Embedded Binaries" section.
 - You will see two different `MLStarRating.xcodeproj` folders each with two different versions of the `MLStarRating.framework` nested inside a `Products` folder.
 
-    > It does not matter which `Products` folder you choose from.
+> It does not matter which `Products` folder you choose from.
 
 - Select the `MLStarRating.framework`.
 
@@ -135,7 +135,7 @@ $ git submodule update --init --recursive
 </p></details>
 
 <details>
-  <summary><strong>Embedded Binaries</strong></summary><p>
+<summary><strong>Embedded Binaries</strong></summary><p>
 
 - Download the latest release from https://github.com/micheltlutz/MLStarRating/releases
 - Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the "Targets" heading in the sidebar.
@@ -147,15 +147,30 @@ $ git submodule update --init --recursive
 </p></details>
 
 ## Usage
+
+### You need two image files with named in your Assets 
+
+- emptyStar
+- fullStar
+
 ```swift
 
 import MLStarRating
 
 let mlStarRating = MLStarRating()
 mlStarRating.didChangeStar = { starCount in
-  print("Star selected: \(starCount)")
+print("Star selected: \(starCount)")
 }
 ```
+
+### You can Change the image name 
+```swift
+let mlStarRating = MLStarRating()
+mlStarRating.emptyStarImageName = "string name image"
+mlStarRating.fullStarImageName = "string name image"
+mlStarRating.setupStars() // to change configuration buttons
+```
+
 
 ## Contributing
 
