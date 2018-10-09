@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MLStarRating  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="MLStarRating  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">MLStarRating Docs</a> (80% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">MLStarRating Reference</a>
+        <img id="carat" src="img/carat.png" />
+        MLStarRating  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/MLStarButton.html">MLStarButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/MLStarRating.html">MLStarRating</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/MLStarButtonState.html">MLStarButtonState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/MLViewConfiguration.html">MLViewConfiguration</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='mlstarrating' class='heading'>MLStarRating</h1>
+
+<p align="center">
+ <img width="300" height="300"src="http://micheltlutz.me/imagens/projetos/MLStarRating/logo.png">
+</p>
+
+<p><a href="https://cocoapods.org/pods/MLStarRating"><img src="https://img.shields.io/cocoapods/p/MLStarRating.svg" alt="Platforms"></a>
+<a href="https://raw.githubusercontent.com/micheltlutz/MLStarRating/master/LICENSE"><img src="https://img.shields.io/cocoapods/l/MLStarRating.svg" alt="License"></a></p>
+
+<p><a href="https://github.com/apple/swift-package-manager"><img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" alt="Swift Package Manager"></a>
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a>
+<a href="https://cocoapods.org/pods/MLStarRating"><img src="https://img.shields.io/cocoapods/v/MLStarRating.svg" alt="CocoaPods compatible"></a></p>
+
+<p><a href="https://travis-ci.org/micheltlutz/MLStarRating/branches"><img src="https://img.shields.io/travis/micheltlutz/MLStarRating/master.svg" alt="Travis"></a>
+<a href="http://github.com/RahulKatariya/SwiftFrameworkTemplate"><img src="https://img.shields.io/badge/SwiftFramework-Template-red.svg" alt="SwiftFrameworkTemplate"></a></p>
+
+<p>Star Ratings for swift projects</p>
+
+<ul>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>iOS 10.0+  / tvOS 9.0+</li>
+<li>Xcode 9.0+</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='dependency-managers' class='heading'>Dependency Managers</h3>
+
+<details>
+<summary><strong>CocoaPods</strong></summary>
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+&ldquo;`bash
+$ gem install cocoapods
+&rdquo;`
+
+To integrate MLStarRating into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+&ldquo;`ruby
+source &lsquo;https://github.com/CocoaPods/Specs.git&rsquo;
+platform :ios, &lsquo;10.0&rsquo;
+use_frameworks!
+
+pod &lsquo;MLStarRating&rsquo;, &lsquo;~> 1.0&rsquo;
+&rdquo;`
+
+Then, run the following command:
+
+&ldquo;`bash
+$ pod install
+&rdquo;`
+
+</details>
+
+<details>
+<summary><strong>Carthage</strong></summary>
+
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that automates the process of adding frameworks to your Cocoa application.
+
+You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+
+&ldquo;`bash
+$ brew update
+$ brew install carthage
+&rdquo;`
+
+To integrate MLStarRating into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+&ldquo;`ogdl
+github &quot;micheltlutz/MLStarRating&rdquo; ~> 1.0
+&ldquo;`
+
+</details>
+
+<details>
+<summary><strong>Swift Package Manager</strong></summary>
+
+To use MLStarRating as a [Swift Package Manager](https://swift.org/package-manager/) package just add the following in your Package.swift file.
+
+&rdquo;` swift
+// swift-tools-version:4.1
+
+import PackageDescription
+
+let package = Package(
+name: &ldquo;HelloMLStarRating&rdquo;,
+dependencies: [
+.package(url: &ldquo;https://github.com/micheltlutz/MLStarRating.git&rdquo;, .upToNextMajor(from: &ldquo;1.0&rdquo;))
+],
+targets: [
+.target(name: &ldquo;HelloMLStarRating&rdquo;, dependencies: [&ldquo;MLStarRating&rdquo;])
+]
+)
+&ldquo;`
+</details>
+<h3 id='manually' class='heading'>Manually</h3>
+
+<p>If you prefer not to use either of the aforementioned dependency managers, you can integrate MLStarRating into your project manually.</p>
+
+<details>
+<summary><strong>Git Submodules</strong></summary><p>
+
+- Open up Terminal, `cd` into your top-level project directory, and run the following command &quot;if&rdquo; your project is not initialized as a git repository:
+
+&ldquo;`bash
+$ git init
+&rdquo;`
+
+- Add MLStarRating as a git [submodule](http://git-scm.com/docs/git-submodule) by running the following command:
+
+&ldquo;`bash
+$ git submodule add https://github.com/micheltlutz/MLStarRating.git
+$ git submodule update &ndash;init &ndash;recursive
+&rdquo;`
+
+- Open the new `MLStarRating` folder, and drag the `MLStarRating.xcodeproj` into the Project Navigator of your application&rsquo;s Xcode project.
+
+> It should appear nested underneath your application&rsquo;s blue project icon. Whether it is above or below all the other Xcode groups does not matter.
+
+- Select the `MLStarRating.xcodeproj` in the Project Navigator and verify the deployment target matches that of your application target.
+- Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the &ldquo;Targets&rdquo; heading in the sidebar.
+- In the tab bar at the top of that window, open the &ldquo;General&rdquo; panel.
+- Click on the `+` button under the &ldquo;Embedded Binaries&rdquo; section.
+- You will see two different `MLStarRating.xcodeproj` folders each with two different versions of the `MLStarRating.framework` nested inside a `Products` folder.
+
+> It does not matter which `Products` folder you choose from.
+
+- Select the `MLStarRating.framework`.
+
+- And that&rsquo;s it!
+
+> The `MLStarRating.framework` is automagically added as a target dependency, linked framework and embedded framework in a copy files build phase which is all you need to build on the simulator and a device.
+
+</p></details>
+
+<details>
+<summary><strong>Embedded Binaries</strong></summary><p>
+
+- Download the latest release from https://github.com/micheltlutz/MLStarRating/releases
+- Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the &ldquo;Targets&rdquo; heading in the sidebar.
+- In the tab bar at the top of that window, open the &ldquo;General&rdquo; panel.
+- Click on the `+` button under the &ldquo;Embedded Binaries&rdquo; section.
+- Add the downloaded `MLStarRating.framework`.
+- And that&rsquo;s it!
+
+</p></details>
+<h2 id='usage' class='heading'>Usage</h2>
+<h3 id='you-need-two-image-files-with-named-in-your-assets' class='heading'>You need two image files with named in your Assets</h3>
+
+<ul>
+<li>emptyStar</li>
+<li>fullStar</li>
+</ul>
+<pre class="highlight swift"><code>
+<span class="kd">import</span> <span class="kt">MLStarRating</span>
+
+<span class="k">let</span> <span class="nv">mlStarRating</span> <span class="o">=</span> <span class="kt">MLStarRating</span><span class="p">()</span>
+<span class="n">mlStarRating</span><span class="o">.</span><span class="n">didChangeStar</span> <span class="o">=</span> <span class="p">{</span> <span class="n">starCount</span> <span class="k">in</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Star selected: </span><span class="se">\(</span><span class="n">starCount</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='you-can-change-the-image-name' class='heading'>You can Change the image name</h3>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">mlStarRating</span> <span class="o">=</span> <span class="kt">MLStarRating</span><span class="p">()</span>
+<span class="n">mlStarRating</span><span class="o">.</span><span class="n">emptyStarImageName</span> <span class="o">=</span> <span class="s">"string name image"</span>
+<span class="n">mlStarRating</span><span class="o">.</span><span class="n">fullStarImageName</span> <span class="o">=</span> <span class="s">"string name image"</span>
+<span class="n">mlStarRating</span><span class="o">.</span><span class="nf">setupStars</span><span class="p">()</span> <span class="c1">// to change configuration buttons</span>
+</code></pre>
+<h2 id='contributing' class='heading'>Contributing</h2>
+
+<p>Issues and pull requests are welcome!</p>
+<h2 id='docs' class='heading'>Docs</h2>
+
+<p>See <a href="http://htmlpreview.github.io/?https://github.com/micheltlutz/MLStarRating/blob/develop/docs/index.html">Documentation</a></p>
+
+<p>MLLineChart Docs (44% documented)</p>
+
+<p align="center">
+ <img width="350" height="77"src="http://micheltlutz.me/imagens/projetos/MLStarRating/IMG_4648.jpg"> 
+</p>
+<h2 id='author' class='heading'>Author</h2>
+
+<p>Michel Anderson Lutz Teixeira <a href="https://twitter.com/michel_lutz">@michel_lutz</a></p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>MLStarRating is released under the MIT license. See <a href="https://github.com/micheltlutz/MLStarRating/blob/master/LICENSE">LICENSE</a> for details.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="http://micheltlutz.me" target="_blank" rel="external">Michel Anderson Lutz Teixeira</a>. All rights reserved. (Last updated: 2018-10-09)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

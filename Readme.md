@@ -1,5 +1,9 @@
 # MLStarRating
 
+<p align="center">
+ <img width="300" height="300"src="http://micheltlutz.me/imagens/projetos/MLStarRating/logo.png">
+</p>
+
 [![Platforms](https://img.shields.io/cocoapods/p/MLStarRating.svg)](https://cocoapods.org/pods/MLStarRating)
 [![License](https://img.shields.io/cocoapods/l/MLStarRating.svg)](https://raw.githubusercontent.com/micheltlutz/MLStarRating/master/LICENSE)
 
@@ -41,7 +45,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 use_frameworks!
 
-pod 'MLStarRating', '~> 0.0.4'
+pod 'MLStarRating', '~> 1.0'
 ```
 
 Then, run the following command:
@@ -67,7 +71,7 @@ $ brew install carthage
 To integrate MLStarRating into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "micheltlutz/MLStarRating" ~> 0.0.4
+github "micheltlutz/MLStarRating" ~> 1.0
 ```
 
 </details>
@@ -85,7 +89,7 @@ import PackageDescription
 let package = Package(
 name: "HelloMLStarRating",
 dependencies: [
-.package(url: "https://github.com/micheltlutz/MLStarRating.git", .upToNextMajor(from: "0.0.4"))
+.package(url: "https://github.com/micheltlutz/MLStarRating.git", .upToNextMajor(from: "1.0"))
 ],
 targets: [
 .target(name: "HelloMLStarRating", dependencies: ["MLStarRating"])
@@ -159,7 +163,7 @@ import MLStarRating
 
 let mlStarRating = MLStarRating()
 mlStarRating.didChangeStar = { starCount in
-print("Star selected: \(starCount)")
+	print("Star selected: \(starCount)")
 }
 ```
 
@@ -175,6 +179,23 @@ mlStarRating.setupStars() // to change configuration buttons
 ## Contributing
 
 Issues and pull requests are welcome!
+
+
+## Docs
+
+See [Documentation](http://htmlpreview.github.io/?https://github.com/micheltlutz/MLStarRating/blob/develop/docs/index.html)
+
+MLLineChart Docs (80% documented)
+
+<p align="center">
+ <img width="350" height="77"src="http://micheltlutz.me/imagens/projetos/MLStarRating/IMG_4648.jpg"> 
+</p>
+
+## Todo
+
+- [ ] Migrate to Swift 4.2
+- [ ] 100% documented
+
 
 ## Author
 
