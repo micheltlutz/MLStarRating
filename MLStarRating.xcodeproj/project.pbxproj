@@ -39,8 +39,8 @@
 		D0AC041A21221529002584B2 /* ClosureAttach.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC041721221528002584B2 /* ClosureAttach.swift */; };
 		D0AC041B21221529002584B2 /* UIControl+addAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC041821221529002584B2 /* UIControl+addAction.swift */; };
 		D0AC041C21221529002584B2 /* UIControl+addAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC041821221529002584B2 /* UIControl+addAction.swift */; };
-		D0AC041E2122153D002584B2 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC041D2122153D002584B2 /* ViewConfiguration.swift */; };
-		D0AC041F2122153D002584B2 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC041D2122153D002584B2 /* ViewConfiguration.swift */; };
+		D0AC041E2122153D002584B2 /* MLViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC041D2122153D002584B2 /* MLViewConfiguration.swift */; };
+		D0AC041F2122153D002584B2 /* MLViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC041D2122153D002584B2 /* MLViewConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,7 +130,7 @@
 		D0AC041121221403002584B2 /* MLStarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLStarButton.swift; sourceTree = "<group>"; };
 		D0AC041721221528002584B2 /* ClosureAttach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureAttach.swift; sourceTree = "<group>"; };
 		D0AC041821221529002584B2 /* UIControl+addAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+addAction.swift"; sourceTree = "<group>"; };
-		D0AC041D2122153D002584B2 /* ViewConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
+		D0AC041D2122153D002584B2 /* MLViewConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLViewConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,7 +276,7 @@
 				359649021FB18CBF00FC7ADC /* MLStarRating.swift */,
 				D0AC041721221528002584B2 /* ClosureAttach.swift */,
 				D0AC041821221529002584B2 /* UIControl+addAction.swift */,
-				D0AC041D2122153D002584B2 /* ViewConfiguration.swift */,
+				D0AC041D2122153D002584B2 /* MLViewConfiguration.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -578,7 +578,7 @@
 				D0AC041921221529002584B2 /* ClosureAttach.swift in Sources */,
 				D0AC041B21221529002584B2 /* UIControl+addAction.swift in Sources */,
 				359649031FB18CC000FC7ADC /* MLStarRating.swift in Sources */,
-				D0AC041E2122153D002584B2 /* ViewConfiguration.swift in Sources */,
+				D0AC041E2122153D002584B2 /* MLViewConfiguration.swift in Sources */,
 				D0AC041221221403002584B2 /* MLStarButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,7 +606,7 @@
 				D0AC041A21221529002584B2 /* ClosureAttach.swift in Sources */,
 				D0AC041C21221529002584B2 /* UIControl+addAction.swift in Sources */,
 				359649051FB18CC000FC7ADC /* MLStarRating.swift in Sources */,
-				D0AC041F2122153D002584B2 /* ViewConfiguration.swift in Sources */,
+				D0AC041F2122153D002584B2 /* MLViewConfiguration.swift in Sources */,
 				D0AC041321221403002584B2 /* MLStarButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
