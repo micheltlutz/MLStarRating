@@ -193,7 +193,6 @@ MLLineChart Docs (80% documented)
 
 ## Todo
 
-- [ ] Migrate to Swift 4.2
 - [ ] 100% documented
 
 
