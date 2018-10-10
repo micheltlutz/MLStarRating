@@ -28,7 +28,7 @@ extension UIControl {
     /**
      :nodoc:
      */
-    func addAction(for controlEvents: UIControlEvents = .primaryActionTriggered, action: @escaping () -> ()) {
+    func addAction(for controlEvents: UIControl.Event = .primaryActionTriggered, action: @escaping () -> ()) {
         let sleeve = ClosureSleeve(attachTo: self, closure: action)
         addTarget(sleeve, action: #selector(ClosureSleeve.invoke), for: controlEvents)
     }
