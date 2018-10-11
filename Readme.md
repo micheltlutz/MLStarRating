@@ -12,7 +12,7 @@
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/MLStarRating.svg)](https://cocoapods.org/pods/MLStarRating)
 
 [![Travis](https://img.shields.io/travis/micheltlutz/MLStarRating/master.svg)](https://travis-ci.org/micheltlutz/MLStarRating/branches)
-[![SwiftFrameworkTemplate](https://img.shields.io/badge/SwiftFramework-Template-red.svg)](http://github.com/RahulKatariya/SwiftFrameworkTemplate)
+
 
 Star Ratings for swift projects
 
@@ -45,7 +45,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 use_frameworks!
 
-pod 'MLStarRating', '~> 1.0'
+pod 'MLStarRating', '~> 1.0.1'
 ```
 
 Then, run the following command:
@@ -71,7 +71,7 @@ $ brew install carthage
 To integrate MLStarRating into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "micheltlutz/MLStarRating" ~> 1.0
+github "micheltlutz/MLStarRating" ~> 1.0.1
 ```
 
 </details>
@@ -82,14 +82,14 @@ github "micheltlutz/MLStarRating" ~> 1.0
 To use MLStarRating as a [Swift Package Manager](https://swift.org/package-manager/) package just add the following in your Package.swift file.
 
 ``` swift
-// swift-tools-version:4.1
+// swift-tools-version:4.2
 
 import PackageDescription
 
 let package = Package(
 name: "HelloMLStarRating",
 dependencies: [
-.package(url: "https://github.com/micheltlutz/MLStarRating.git", .upToNextMajor(from: "1.0"))
+.package(url: "https://github.com/micheltlutz/MLStarRating.git", .upToNextMajor(from: "1.0.1"))
 ],
 targets: [
 .target(name: "HelloMLStarRating", dependencies: ["MLStarRating"])
@@ -199,6 +199,10 @@ MLLineChart Docs (80% documented)
 ## Author
 
 Michel Anderson Lutz Teixeira [@michel_lutz](https://twitter.com/michel_lutz)
+
+## Contributions
+
+<a href="https://github.com/maclacerda"><img src="https://avatars.githubusercontent.com/u/4759987?v=3" title="maclacerda" width="80" height="80"></a>
 
 ## License
 
