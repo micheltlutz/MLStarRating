@@ -2,6 +2,15 @@
 
 -----
 
+## [1.0.2 - Swift 4.2](https://github.com/micheltlutz/MLAudioPlayer/releases/tag/v1.0.2) (2018-10-14)
+
+#### Fix
+
+Fix Initializer with star checked
+
+
+-----
+
 ## [1.0.1 - Swift 4.2](https://github.com/micheltlutz/MLAudioPlayer/releases/tag/v1.0.1) (2018-10-10)
 
 #### Add
