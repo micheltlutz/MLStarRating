@@ -89,9 +89,11 @@ open class MLStarRating: UIView {
      */
     public init(with star: Int) {
         super.init(frame: .zero)
+        selectedStar = star
         setupStackView()
         setupStars()
         setupViewConfiguration()
+        changeButtons()
     }
     /**
      Call this function when you change the images names self emptyStarImageName or fullStarImageName, this function change images on star(n): MLStarButton

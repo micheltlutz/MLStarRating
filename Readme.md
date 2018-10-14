@@ -45,7 +45,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 use_frameworks!
 
-pod 'MLStarRating', '~> 1.0.1'
+pod 'MLStarRating', '~> 1.0.2'
 ```
 
 Then, run the following command:
@@ -71,7 +71,7 @@ $ brew install carthage
 To integrate MLStarRating into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "micheltlutz/MLStarRating" ~> 1.0.1
+github "micheltlutz/MLStarRating" ~> 1.0.2
 ```
 
 </details>
@@ -89,7 +89,7 @@ import PackageDescription
 let package = Package(
 name: "HelloMLStarRating",
 dependencies: [
-.package(url: "https://github.com/micheltlutz/MLStarRating.git", .upToNextMajor(from: "1.0.1"))
+.package(url: "https://github.com/micheltlutz/MLStarRating.git", .upToNextMajor(from: "1.0.2"))
 ],
 targets: [
 .target(name: "HelloMLStarRating", dependencies: ["MLStarRating"])
