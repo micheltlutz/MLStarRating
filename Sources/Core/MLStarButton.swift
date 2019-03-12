@@ -51,7 +51,7 @@ public class MLStarButton: UIButton {
     /**
      Handler called when uncheck component
      */
-    open var didUnChack: (() -> Void)?
+    open var didUnCheck: (() -> Void)?
     /**
      Contains a viewState
 
@@ -106,7 +106,7 @@ extension MLStarButton {
      */
     @objc fileprivate func touchUpInsideButton() {
         if viewState == .checked {
-            didUnChack?()
+            didUnCheck?()
         } else {
             didCheck?()
         }

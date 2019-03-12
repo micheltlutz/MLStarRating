@@ -70,7 +70,11 @@ open class MLStarRating: UIView {
     /**
      store value of selected star default value = 0
      */
-    open var selectedStar = 0
+    open var selectedStar = 0 {
+        didSet {
+            changeButtons()
+        }
+    }
 
     /**
      Default Initializar with empty stars
@@ -166,7 +170,7 @@ open class MLStarRating: UIView {
      */
     private func changeButtons() {
         clearAllStars()
-        if selectedStar > 0{
+        if selectedStar > 0 && selectedStar <= 5 {
             for i in 0..<selectedStar {
                 buttons[i].viewState = .checked
             }

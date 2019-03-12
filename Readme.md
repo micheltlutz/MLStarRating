@@ -45,7 +45,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 use_frameworks!
 
-pod 'MLStarRating', '~> 1.0.2'
+pod 'MLStarRating', '~> 1.0.3'
 ```
 
 Then, run the following command:
@@ -71,7 +71,7 @@ $ brew install carthage
 To integrate MLStarRating into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "micheltlutz/MLStarRating" ~> 1.0.2
+github "micheltlutz/MLStarRating" ~> 1.0.3
 ```
 
 </details>
@@ -89,7 +89,7 @@ import PackageDescription
 let package = Package(
 name: "HelloMLStarRating",
 dependencies: [
-.package(url: "https://github.com/micheltlutz/MLStarRating.git", .upToNextMajor(from: "1.0.2"))
+.package(url: "https://github.com/micheltlutz/MLStarRating.git", .upToNextMajor(from: "1.0.3"))
 ],
 targets: [
 .target(name: "HelloMLStarRating", dependencies: ["MLStarRating"])
@@ -167,7 +167,7 @@ mlStarRating.didChangeStar = { starCount in
 }
 ```
 
-### You can Change the image name 
+### Can you change the image name 
 ```swift
 let mlStarRating = MLStarRating()
 mlStarRating.emptyStarImageName = "string name image"
@@ -175,6 +175,11 @@ mlStarRating.fullStarImageName = "string name image"
 mlStarRating.setupStars() // to change configuration buttons
 ```
 
+### Change selected star programmatically
+```swift
+let mlStarRating = MLStarRating()
+mlStarRating.selectedStar = 4
+```
 
 ## Contributing
 
