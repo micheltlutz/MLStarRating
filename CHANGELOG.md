@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.4 - Swift 5](https://github.com/micheltlutz/MLAudioPlayer/releases/tag/v1.0.4) (2019-04-14)
+
+#### Add
+
+* Support to Swift 5
+
 -----
 
 ## [1.0.3 - Swift 4.2](https://github.com/micheltlutz/MLAudioPlayer/releases/tag/v1.0.3) (2019-03-12)
